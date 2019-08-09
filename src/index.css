@@ -56,3 +56,9 @@ code {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
+
+.center-div
+{
+     margin: 0 auto;
+     width: 512px; 
+}
