@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Ubuntu", "Segoe UI", "Roboto", "Oxygen",
+      "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+  }
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    text-indent: 10%;
+    font-size: 18px;
+}
+
+p.blockquote {
+    text-indent: 0%;
+    margin-left: 20%;
+    font-size: 18px;
+}
+
+p.noindent {
+    text-indent: 0%;
+    font-size: 10px;
+    font-size: 18px;
+}
+
+p.hanging {
+    padding-left: 10% ;
+    text-indent: -10% ;
+}
