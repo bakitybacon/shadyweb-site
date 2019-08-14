@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Switch, Redirect, Route, withRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Home from './modules/home/containers/Home'
+import Rater from './modules/ChessRater/containers/Rater'
 
-function App() {
-  return (
-    <div class="center-div">
-      <center> <h2>Corrin Fosmire</h2> </center>
-      <img src="me.jpg" height="683" width="512"></img>
-      <center> <h2> <a href="/CorrinFosmireResume.pdf"> Resume </a> | <a href="https://github.com/bakitybacon"> GitHub </a> | <a href="mailto:cf24@rice.edu">Email </a> </h2> </center>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+    <Switch>
+      <Route path="/rater" component={Rater} />
+      <Route path="/" component={Home} />
+    </Switch>
+    );
+  };
 }
 
-export default App;
+export default withRouter(App);
